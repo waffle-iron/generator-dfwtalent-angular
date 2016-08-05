@@ -25,7 +25,7 @@ yo irvui-angular-2
 
 ## License
 
-MIT © [Anish Reddy]()
+MIT © [IRVUI]()
 
 
 [npm-image]: https://badge.fury.io/js/generator-irvui-angular-2.svg
