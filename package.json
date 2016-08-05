@@ -1,13 +1,18 @@
 {
   "name": "generator-irvui-angular-2",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generates Angular 2 Scaffold",
   "homepage": "",
   "author": {
-    "name": "Anish Reddy",
-    "email": "anish.m.reddy@one.verizon.com",
-    "url": ""
+    "name": "Irving UI",
+    "email": "irvui@verizon.com"
   },
+  "contributors": [
+    {
+      "name": "Anish Reddy",
+      "email": "anish.m.reddy@one.verizon.com",
+    }
+  ],
   "files": [
     "generators"
   ],
