@@ -93,9 +93,9 @@ module.exports = yeoman.Base.extend({
     if (this.props.docker) {
       this.copy('Dockerfile', 'Dockerfile');
     }
-    this.copy('.gitignore', '.gitignore');
-    this.copy('.dockerignore', '.dockerignore');
-    this.copy('.editorconfig', '.editorconfig');
+    this.copy('_gitignore', '.gitignore');
+    this.copy('_dockerignore', '.dockerignore');
+    this.copy('_editorconfig', '.editorconfig');
   },
   install: function () {
     this.installDependencies({
