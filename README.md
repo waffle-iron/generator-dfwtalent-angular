@@ -1,4 +1,4 @@
-# generator-irvui-angular-2 [![NPM version][npm-image]][npm-url]
+# generator-irvui-angular-2 [![npm version][npm-image]][npm-url]
 > Generates Angular 2 Scaffold
 
 ## Installation
