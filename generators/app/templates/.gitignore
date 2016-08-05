@@ -1,0 +1,17 @@
+.idea
+typings/**
+node_modules
+npm-debug.log
+jspm_packages
+link-checker-results.txt
+**/*npm-debug.log.*
+client/app/**/*.js
+client/**/*.js.map
+client/assets/app.css
+_test-output/*.txt
+_temp
+
+!**/*e2e-spec.js
+
+/dist/
+/dev/
