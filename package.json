@@ -48,7 +48,10 @@
       "mocha": true
     }
   },
-  "repository": "/generator-irvui-angular-2",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/irvui/generator-irvui-angular-2.git"
+  },
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
