@@ -25,7 +25,7 @@ yo irvui-angular-2
 
 ## License
 
-MIT © [IRVUI]()
+MIT © [IRVUI](https://github.com/irvui/)
 
 
 [npm-image]: https://badge.fury.io/js/generator-irvui-angular-2.svg
