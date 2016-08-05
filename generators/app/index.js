@@ -22,10 +22,14 @@ module.exports = yeoman.Base.extend({
       name: 'appname',
       message: 'Please enter the name of project',
       default: default_app
+    },{
+      type: 'confirm',
+      name: 'docker',
+      message: 'Would you like to include docker?',
+      default: true
     }];
 
     return this.prompt(prompts).then(function (props) {
-      // To access props later use this.props.someAnswer;
       this.props = props;
       console.log(this.props)
     }.bind(this));
@@ -35,7 +39,8 @@ module.exports = yeoman.Base.extend({
     this.fs.copyTpl(
       this.templatePath('package.json'),
       this.destinationPath('package.json'), {
-        appname: this.props.appname
+        appname: this.props.appname,
+        docker: this.props.docker
       }
     );
     this.fs.copyTpl(
@@ -85,27 +90,16 @@ module.exports = yeoman.Base.extend({
     this.copy('tslint.json', 'tslint.json');
     this.copy('typings.json', 'typings.json');
     this.copy('karma.conf.js', 'karma.conf.js');
-    this.copy('Dockerfile', 'Dockerfile');
+    if (this.props.docker) {
+      this.copy('Dockerfile', 'Dockerfile');
+    }
     this.copy('.gitignore', '.gitignore');
     this.copy('.dockerignore', '.dockerignore');
     this.copy('.editorconfig', '.editorconfig');
-    // this.copy('client/index.html','client/index.html')
-    // // this.directory('e2e','e2e')
-    // // this.copy('server','server')
-    // this.copy('README.md','README.md')
-    // this.copy('package.json','package.json')
-    // this.copy('index.html', 'index.html');
-    // this.copy('gulpfile.js', 'gulpfile.js');
   },
-    // this.fs.copy(
-    //   this.templatePath('dummyfile.txt'),
-    //   this.destinationPath('dummyfile.txt')
-    // );
-  // },
-
   install: function () {
     this.installDependencies({
       bower: false
     });
-  }
+ }
 });

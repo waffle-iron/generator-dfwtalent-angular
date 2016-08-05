@@ -35,8 +35,10 @@
     "test:e2e": "tsc & NODE_ENV=test node server/index.js & protractor protractor.config.js",
     "webdriver:update": "webdriver-manager update",
     "live:reload": "live-reload --port 9091 client/ server/",
+    <%_ if(docker) { -%>
     "docker": "npm run build && docker build -t irvui/twizzle-ui:latest .",
     "docker:start": "docker run -p 3000:3000 irvui/twizzle-ui",
+    <%_ } -%>
     "prod": "npm run build && cd dist && npm i --production && node server/index.js"
   },
   "license": "MIT",
