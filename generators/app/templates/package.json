@@ -5,16 +5,6 @@
     "name": "Irving UI",
     "email": "irvui@verizon.com"
   },
-  "contributors": [
-    {
-      "name": "Anish Madhi",
-      "email": "anish.m.reddy@verizon.com"
-    },
-    {
-      "name": "Daniel Scholl",
-      "email": "daniel.scholl@verizon.com"
-    }
-  ],
   "scripts": {
     "postinstall": "typings install",
     "clean": "rm -rf dist",
@@ -51,13 +41,16 @@
     "@angular/platform-browser": "2.0.0-rc.4",
     "@angular/platform-browser-dynamic": "2.0.0-rc.4",
     "@angular/router": "3.0.0-beta.2",
-    "@angular/upgrade": "2.0.0-rc.4",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "systemjs": "0.19.36",
+    "zone.js": "^0.6.12",
     "angular2-in-memory-web-api": "0.0.14",
     "body-parser": "^1.15.2",
     "bootstrap-sass": "^3.3.7",
     "chalk": "^1.1.3",
     "compression": "^1.6.2",
-    "core-js": "^2.4.1",
     "debug": "^2.2.0",
     "ejs": "^2.5.1",
     "errorhandler": "^1.4.3",
@@ -66,12 +59,8 @@
     "morgan": "^1.7.0",
     "passport": "^0.3.2",
     "passport-github": "^1.1.0",
-    "reflect-metadata": "^0.1.3",
-    "rxjs": "5.0.0-beta.6",
-    "systemjs": "0.19.36",
     "typings": "^1.3.2",
     "verror": "^1.6.1",
-    "zone.js": "^0.6.12"
   },
   "devDependencies": {
     "concurrently": "^2.2.0",
