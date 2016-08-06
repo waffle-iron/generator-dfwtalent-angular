@@ -1,4 +1,7 @@
-# generator-irvui-angular-2 [![npm version][npm-image]][npm-url]
+# generator-irvui-angular-2 [![npm][npm-badge]][npm-badge-url]
+
+[![Dependency Status][david-badge]][david-badge-url]
+
 > Generates Angular 2 Scaffold
 
 ## Installation
@@ -27,12 +30,13 @@ yo irvui-angular-2
 
 MIT © [IRVUI](https://github.com/irvui/)
 
+[npm-badge]: https://img.shields.io/npm/v/generator-irvui-angular-2.svg
+[npm-badge-url]: https://www.npmjs.com/package/generator-irvui-angular-2
+[david-badge]: https://david-dm.org/irvui/generator-irvui-angular2.svg
+[david-badge-url]: https://david-dm.org/irvui/generator-irvui-angular2
 
-[npm-image]: https://badge.fury.io/js/generator-irvui-angular-2.svg
-[npm-url]: https://npmjs.org/package/generator-irvui-angular-2
+
 [travis-image]: https://travis-ci.org//generator-irvui-angular-2.svg?branch=master
 [travis-url]: https://travis-ci.org//generator-irvui-angular-2
-[daviddm-image]: https://david-dm.org//generator-irvui-angular-2.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org//generator-irvui-angular-2
 [coveralls-image]: https://coveralls.io/repos//generator-irvui-angular-2/badge.svg
 [coveralls-url]: https://coveralls.io/r//generator-irvui-angular-2
