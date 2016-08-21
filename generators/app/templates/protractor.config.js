@@ -30,11 +30,15 @@ exports.config = {
   },
 
   // Framework to use. Jasmine is recommended.
-  framework: 'jasmine',
+  framework: 'jasmine2',
 
   // Spec patterns are relative to this config file
-  specs: ['**/*e2e-spec.js' ],
+    suites: {
+    landing: ['./e2e/spec/landing.spec.js']
+  },
 
+  getPageTimeout: 30000,
+  allScriptsTimeout: 30000,
 
   // For angular2 tests
   useAllAngular2AppRoots: true,
@@ -84,7 +88,7 @@ function sendKeys(element, str) {
 
 // Custom reporter
 function Reporter(options) {
-  var _defaultOutputFile = path.resolve(process.cwd(), './_test-output', 'protractor-results.txt');
+  var _defaultOutputFile = path.resolve(process.cwd(), './', 'protractor-results.txt');
   options.outputFile = options.outputFile || _defaultOutputFile;
 
   initOutputFile(options.outputFile);

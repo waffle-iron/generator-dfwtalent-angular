@@ -4,7 +4,7 @@
 * MIT Licensed
 */
 
-import { provideRouter, RouterConfig } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/index';
 import {
@@ -14,13 +14,13 @@ import {
 } from './styleguide/index';
 
 // Route config let's you map routes to components
-const routes: RouterConfig = [
+const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'fonts', component: FontsComponent },
   { path: 'colors', component: ColorsComponent },
   { path: 'icons', component: IconsComponent }
 ];
 
-export const APP_ROUTER_PROVIDERS = [
-  provideRouter(routes)
-];
+export const routing = RouterModule.forRoot(appRoutes);
+
+export const routedComponents = [HomeComponent, FontsComponent, IconsComponent, ColorsComponent];

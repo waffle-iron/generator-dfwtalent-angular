@@ -21,6 +21,15 @@
     'rxjs':                       { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
   };
+  var barrels = [
+    // App specific barrels.
+    'app/home',
+    'app/shared',
+    'app/styleguide',
+  ];
+  barrels.forEach(function (barrelName) {
+      packages[barrelName] = { main: 'index' };
+  });
 
   var ngPackageNames = [
     'common',
