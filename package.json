@@ -1,16 +1,16 @@
 {
-  "name": "generator-irvui-angular-2",
+  "name": "generator-dfwtalent-angular-2",
   "version": "1.0.1-beta.5",
   "description": "Generates Angular 2 Scaffold",
   "homepage": "",
   "author": {
-    "name": "Irving UI",
-    "email": "irvui@verizon.com"
+    "name": "DFWTalent",
+    "email": ""
   },
   "contributors": [
     {
       "name": "Anish Reddy",
-      "email": "anish.m.reddy@one.verizon.com"
+      "email": ""
     }
   ],
   "files": [
@@ -50,7 +50,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/irvui/generator-irvui-angular-2.git"
+    "url": "git://github.com/dfwtalent/generator-dfwtalent-angular-2.git"
   },
   "scripts": {
     "prepublish": "gulp prepublish",
