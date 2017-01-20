@@ -1,4 +1,4 @@
-# generator-irvui-angular-2 [![npm][npm-badge]][npm-badge-url]
+# generator-web-angular-2 [![npm][npm-badge]][npm-badge-url]
 
 [![Dependency Status][david-badge]][david-badge-url]
 
@@ -6,7 +6,7 @@
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-irvui-angular-2 using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-web-angular-2 using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
@@ -16,7 +16,7 @@ npm install -g generator-irvui-angular-2
 Then generate your new project:
 
 ```bash
-yo irvui-angular-2
+yo dfwtalent-angular-2
 ```
 
 ## Getting To Know Yeoman
@@ -28,15 +28,15 @@ yo irvui-angular-2
 
 ## License
 
-MIT © [IRVUI](https://github.com/irvui/)
+MIT © [dfwtalent](https://github.com/dfwtalent/)
 
-[npm-badge]: https://img.shields.io/npm/v/generator-irvui-angular-2.svg
-[npm-badge-url]: https://www.npmjs.com/package/generator-irvui-angular-2
-[david-badge]: https://david-dm.org/irvui/generator-irvui-angular2.svg
-[david-badge-url]: https://david-dm.org/irvui/generator-irvui-angular2
+[npm-badge]: https://img.shields.io/npm/v/generator-dfwtalent-angular-2.svg
+[npm-badge-url]: https://www.npmjs.com/package/generator-dfwtalent-angular-2
+[david-badge]: https://david-dm.org/irvui/generator-dfwtalent-angular2.svg
+[david-badge-url]: https://david-dm.org/irvui/generator-dfwtalent-angular2
 
 
-[travis-image]: https://travis-ci.org//generator-irvui-angular-2.svg?branch=master
-[travis-url]: https://travis-ci.org//generator-irvui-angular-2
-[coveralls-image]: https://coveralls.io/repos//generator-irvui-angular-2/badge.svg
-[coveralls-url]: https://coveralls.io/r//generator-irvui-angular-2
+[travis-image]: https://travis-ci.org//generator-dfwtalent-angular-2.svg?branch=master
+[travis-url]: https://travis-ci.org//generator-dfwtalent-angular-2
+[coveralls-image]: https://coveralls.io/repos//generator-dfwtalent-angular-2/badge.svg
+[coveralls-url]: https://coveralls.io/r//generator-dfwtalent-angular-2
