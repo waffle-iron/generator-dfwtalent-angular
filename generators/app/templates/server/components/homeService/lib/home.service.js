@@ -1,25 +1,28 @@
-/*!
-* ThingSpace
-* Copyright(c) 2016 Verizon Irving UI <irvui@verizon.com>
-* MIT Licensed
-*/
-
 'use strict';
 
-var Emitter = require('events').EventEmitter;
-var util = require('util');
-var Verror = require('verror');
-var log = require('debug')('HomeService');
+const Emitter = require('events').EventEmitter;
+const util = require('util');
+const request = require('request');
+const bunyan = require('bunyan');
+const bformat = require('bunyan-format');
+const Response = require('./serviceResult.model');
+
+let formatted = bformat({ outputMode: 'short', color: true });
+let log = bunyan.createLogger({
+  name: 'HomeService',
+  level: process.env.LOG_LEVEL || 'info',
+  stream: formatted,
+  serializers: bunyan.stdSerializers
+});
 
 var Model = require('./home.model.js');
-var Response = require('./serviceResult.model');
 
-var ItemService = function(configuration) {
+const Service = function Service(configuration) {
   Emitter.call(this);
-  var self = this;
-  var continueWith = null;
+  let self = this;
+  let continueWith = null;
 
-  var config = configuration;
+  let config = configuration;
 
   // Validate Service Input
   if(!config) {
@@ -34,33 +37,33 @@ var ItemService = function(configuration) {
 
 
   // READ
-  var readItem = function() {
-    log('Info: ' + JSON.stringify('readItem', null, 2));
-    var result = new Model(config);
+  let readItem = function readItem() {
+    log.debug('readItem()');
+
+    let result = new Model(config);
     return self.emit('send-data', result);
   };
 
   // Create an Okay Result
-  var sendData = function(data) {
-    var result = new Response();
+  let sendData = function sendData(data) {
+    let result = new Response();
     result.success = true;
     result.message = 'All Good';
     result.data = data;
+    log.trace('SEND SUCCESS');
+
     if(continueWith) {
       continueWith(null, result);
     }
   };
 
   // Create a Bad Result
-  var sendError = function(err, message) {
-    var result = new Response();
+  let sendError = function sendError(err, message) {
+    let result = new Response();
     result.success = false;
     result.message = message;
+    log.error('SEND ERROR', err);
 
-    if(err) {
-      var error = new Verror(err, message);
-      log('Failure: ' + JSON.stringify(error, null, 2));
-    }
     if(continueWith) {
       continueWith(null, result);
     }
@@ -68,7 +71,7 @@ var ItemService = function(configuration) {
 
   /////////////////////////////////////////
 
-  self.read = function(done) {
+  self.read = function read(done) {
     continueWith = done;
     self.emit('read-item');
   };
@@ -80,5 +83,5 @@ var ItemService = function(configuration) {
   return self;
 };
 
-util.inherits(ItemService,Emitter);
-module.exports = ItemService;
+util.inherits(Service, Emitter);
+module.exports = Service;

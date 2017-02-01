@@ -1,15 +1,8 @@
-/*!
-* ThingSpace
-* Copyright(c) 2016 Verizon Irving UI <irvui@verizon.com>
-* MIT Licensed
-*/
-
 'use strict';
 
 var should = require('chai').should();
 var assert = require('assert');
 var Service = require('../lib/home.service');
-var config = require('./config.json');
 var Model = require('../lib/home.model');
 
 describe('A Home Service', function() {

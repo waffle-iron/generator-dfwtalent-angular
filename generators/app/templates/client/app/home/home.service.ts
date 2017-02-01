@@ -1,9 +1,3 @@
-/*!
-* ThingSpace
-* Copyright(c) 2016 Verizon Irving UI <irvui@verizon.com>
-* MIT Licensed
-*/
-
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 

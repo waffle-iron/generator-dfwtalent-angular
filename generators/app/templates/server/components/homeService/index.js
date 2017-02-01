@@ -1,23 +1,12 @@
-/*!
-* ThingSpace
-* Copyright(c) 2016 Verizon Irving UI <irvui@verizon.com>
-* MIT Licensed
-*/
-
 'use strict';
+var Service = require('./lib/home.service');
 
-var homeService = require('./lib/home.service');
+var HomeService = function(config){
+  let self = this;
+  let service = new Service(config);
 
-var HomeService = function(){
-  var self = this;
-  var service = null;
-
-  self.setup = function (config){
-    service = new homeService(config);
-  };
-
-  self.get = function(done) {
-    service.read(function(err, result) {
+  self.get = (input, done) => {
+    service.read((err, result) => {
       done(err, result.data);
     });
   };
@@ -25,4 +14,4 @@ var HomeService = function(){
   return self;
 };
 
-module.exports = new HomeService();
+module.exports = HomeService;

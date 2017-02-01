@@ -1,21 +1,19 @@
-/*!
-* ThingSpace
-* Copyright(c) 2016 Verizon Irving UI <irvui@verizon.com>
-* MIT Licensed
-*/
-
 'use strict';
 
-var errors = require('./components/errors');
-var path = require('path');
-
-var config = require('./config/environment');
+const errors = require('./components/errors');
+const path = require('path');
+const config = require('./config/environment');
+const pkg = require('../package.json');
 
 
 module.exports = function (app) {
+  const BASE_URL='/api/v1';
 
   // Insert routes below
-  app.use('/api/v1/home',require('./api/home'));
+  app.use(BASE_URL + '/home', require('./api/home'));
+
+  // // Insert routes below
+  // app.use('/api/v1/home',require('./api/home'));
 
     // Return API Version
   app.route('/api').get(function(req, res) {

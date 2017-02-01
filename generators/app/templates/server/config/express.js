@@ -1,9 +1,3 @@
-/*!
-* ThingSpace
-* Copyright(c) 2016 Verizon Irving UI <irvui@verizon.com>
-* MIT Licensed
-*/
-
 'use strict';
 
 var express = require('express');
@@ -13,7 +7,6 @@ var path = require('path');
 var bodyParser = require('body-parser');
 
 var config = require('./environment');
-var passport = require('passport');
 
 module.exports = function (app) {
 
@@ -24,8 +17,7 @@ module.exports = function (app) {
   app.use(bodyParser.urlencoded({ extended: false }));
   app.use(bodyParser.json());
   app.use(compression());
-  app.use(passport.initialize());
-  app.use(passport.session());
+
   console.log(env);
   if(env === 'development'){
     app.use(morgan('dev'));

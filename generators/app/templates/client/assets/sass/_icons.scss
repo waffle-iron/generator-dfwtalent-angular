@@ -36,7 +36,7 @@
   }
 }
 
-$font-path:               "/assets/fonts" !default;
+$font-path:               "fonts" !default;
 
 // Declare icon font
 @include font-face('icons', '#{$font-path}/icons');

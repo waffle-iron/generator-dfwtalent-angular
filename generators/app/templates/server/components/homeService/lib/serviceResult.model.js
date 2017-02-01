@@ -1,17 +1,11 @@
-/*!
-* ThingSpace
-* Copyright(c) 2016 Verizon Irving UI <irvui@verizon.com>
-* MIT Licensed
-*/
-
 'use strict';
 
-var ServiceResult = function() {
-  var result = {};
-  result.success = false;
-  result.message = null;
-  result.data = null;
-  return result;
+const ServiceResult = function ServiceResult() {
+  return {
+    success: false,
+    message: null,
+    data: null
+  }
 };
 
 module.exports = ServiceResult;

@@ -1,9 +1,3 @@
-/*!
-* ThingSpace
-* Copyright(c) 2016 Verizon Irving UI <irvui@verizon.com>
-* MIT Licensed
-*/
-
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule }              from './app.module';
 

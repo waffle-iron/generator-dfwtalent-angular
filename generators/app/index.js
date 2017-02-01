@@ -50,6 +50,7 @@ module.exports = Generator.extend({
     this.fs.copy(this.templatePath('tsconfig.json'), this.destinationPath('tsconfig.json'));
     this.fs.copy(this.templatePath('tslint.json'), this.destinationPath('tslint.json'));
     this.fs.copy(this.templatePath('typings.json'), this.destinationPath('typings.json'));
+    this.fs.copy(this.templatePath('webpack.config.js'), this.destinationPath('webpack.config.js'));
     this.fs.copy(this.templatePath('yarn.lock'), this.destinationPath('yarn.lock'));
     this.fs.copy(this.templatePath('client/**/*'), this.destinationPath('client'));
     this.fs.copyTpl(
@@ -60,8 +61,9 @@ module.exports = Generator.extend({
       this.templatePath('client/app/shared/header.component.html'),
       this.destinationPath('client/app/shared/header.component.html'), {appname: this.props.appname}
     );
-    this.fs.copy(this.templatePath('server/**/*'), this.destinationPath('server'));
+    this.fs.copy(this.templatePath('config/**/*'), this.destinationPath('config'));
     this.fs.copy(this.templatePath('e2e/**/*'), this.destinationPath('e2e'));
+    this.fs.copy(this.templatePath('server/**/*'), this.destinationPath('server'));
   },
 
   install: function () {

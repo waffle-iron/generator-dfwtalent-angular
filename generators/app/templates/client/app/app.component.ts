@@ -1,14 +1,27 @@
-/*!
-* ThingSpace
-* Copyright(c) 2016 Verizon Irving UI <irvui@verizon.com>
-* MIT Licensed
-*/
 
 import { Component } from '@angular/core';
+import { Router, Event, NavigationEnd } from '@angular/router';
+import {Location} from '@angular/common';
+// import the WindowRef provider
+declare var $:any;
+declare var ga:Function;
+declare var app: any;
+
+require("../assets/main.scss");
 
 @Component({
-    moduleId: module.id,
     selector: 'app',
     templateUrl: 'app.component.html'
 })
-export class AppComponent { }
+export class AppComponent {
+  public title = 'UI';
+
+  constructor(private _router: Router, private _location: Location){
+
+  }
+
+	ngOnDestroy(): void{
+
+	}
+
+}
