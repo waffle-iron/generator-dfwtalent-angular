@@ -1,22 +1,19 @@
-# generator-web-angular-2 [![npm][npm-badge]][npm-badge-url]
-
-[![Dependency Status][david-badge]][david-badge-url]
-
-> Generates Angular 2 Scaffold
+# generator-dfwtalent-angular [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+> Full Stack Angular with Express
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-web-angular-2 using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-dfwtalent-angular using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
-npm install -g generator-irvui-angular-2
+npm install -g generator-dfwtalent-angular
 ```
 
 Then generate your new project:
 
 ```bash
-yo dfwtalent-angular-2
+yo dfwtalent-angular
 ```
 
 ## Getting To Know Yeoman
@@ -28,15 +25,14 @@ yo dfwtalent-angular-2
 
 ## License
 
-MIT © [dfwtalent](https://github.com/dfwtalent/)
-
-[npm-badge]: https://img.shields.io/npm/v/generator-dfwtalent-angular-2.svg
-[npm-badge-url]: https://www.npmjs.com/package/generator-dfwtalent-angular-2
-[david-badge]: https://david-dm.org/irvui/generator-dfwtalent-angular2.svg
-[david-badge-url]: https://david-dm.org/irvui/generator-dfwtalent-angular2
+MIT © [DFWTALENT]()
 
 
-[travis-image]: https://travis-ci.org//generator-dfwtalent-angular-2.svg?branch=master
-[travis-url]: https://travis-ci.org//generator-dfwtalent-angular-2
-[coveralls-image]: https://coveralls.io/repos//generator-dfwtalent-angular-2/badge.svg
-[coveralls-url]: https://coveralls.io/r//generator-dfwtalent-angular-2
+[npm-image]: https://badge.fury.io/js/generator-dfwtalent-angular.svg
+[npm-url]: https://npmjs.org/package/generator-dfwtalent-angular
+[travis-image]: https://travis-ci.org/dfwtalent/generator-dfwtalent-angular.svg?branch=master
+[travis-url]: https://travis-ci.org/dfwtalent/generator-dfwtalent-angular
+[daviddm-image]: https://david-dm.org/dfwtalent/generator-dfwtalent-angular.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/dfwtalent/generator-dfwtalent-angular
+[coveralls-image]: https://coveralls.io/repos/dfwtalent/generator-dfwtalent-angular/badge.svg
+[coveralls-url]: https://coveralls.io/r/dfwtalent/generator-dfwtalent-angular

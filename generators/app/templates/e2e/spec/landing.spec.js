@@ -39,8 +39,8 @@ describe('Landing Page', () => {
     expect(page.elements.iconLink.getAttribute('routerLink')).toEqual(expected);
   });
 
-  it('should have hero text', () => {
-    let expected = 'Irving User Interface Team';
-    expect(page.elements.heroText.getInnerHtml()).toEqual(expected);
-  });
+  // it('should have hero text', () => {
+  //   let expected = 'Irving User Interface Team';
+  //   expect(page.elements.heroText.getInnerHtml()).toEqual(expected);
+  // });
 });

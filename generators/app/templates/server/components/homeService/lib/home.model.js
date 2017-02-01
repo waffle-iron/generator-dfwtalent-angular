@@ -12,11 +12,11 @@ var Model = function(args){
   }
 
   if(!args.name) {
-    args.name = 'yo-vdms';
+    args.name = 'yo-dfw';
   }
 
   if(!args.message) {
-    args.message = 'Irving User Interface Team';
+    args.message = 'DFW Top Talent';
   }
 
   if(!args.generator) {
