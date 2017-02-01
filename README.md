@@ -1,4 +1,4 @@
-# generator-dfwtalent-angular [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-dfwtalent-angular [![NPM version][npm-image]][npm-url]
 > Full Stack Angular with Express
 
 ## Installation
@@ -30,9 +30,3 @@ MIT © [DFWTALENT]()
 
 [npm-image]: https://badge.fury.io/js/generator-dfwtalent-angular.svg
 [npm-url]: https://npmjs.org/package/generator-dfwtalent-angular
-[travis-image]: https://travis-ci.org/dfwtalent/generator-dfwtalent-angular.svg?branch=master
-[travis-url]: https://travis-ci.org/dfwtalent/generator-dfwtalent-angular
-[daviddm-image]: https://david-dm.org/dfwtalent/generator-dfwtalent-angular.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/dfwtalent/generator-dfwtalent-angular
-[coveralls-image]: https://coveralls.io/repos/dfwtalent/generator-dfwtalent-angular/badge.svg
-[coveralls-url]: https://coveralls.io/r/dfwtalent/generator-dfwtalent-angular
