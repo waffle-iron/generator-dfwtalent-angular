@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/dfwtalent/generator-dfwtalent-angular.png?label=ready&title=Ready)](https://waffle.io/dfwtalent/generator-dfwtalent-angular)
 # generator-dfwtalent-angular [![NPM version][npm-image]][npm-url]
 > Full Stack Angular with Express
 
